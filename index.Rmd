@@ -23,3 +23,7 @@ To show that you can just RMD like normal, check out [this page](plots.html) wit
 Here's a picture of Hello Kitty:
 
 ![](images/download.png)
+
+This is how I feel right now.
+
+![](images/fine.jpg)
