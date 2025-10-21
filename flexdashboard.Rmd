@@ -1,21 +1,17 @@
 ---
-title: "Here are some pltoly plots"
-author: "Kallan Roan"
-date: "2025-10-21"
-output: html_document
+title: "Flexdashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
-Interactivity is great.
-
-Here's is diversye
-
-```{r message = FALSE}
+```{r setup, include=FALSE}
+library(flexdashboard)
 library(tidyverse)
 library(plotly)
 library(p8105.datasets)
 ```
-
-here is a dataframe
 
 ```{r}
 data("nyc_airbnb")
@@ -37,7 +33,10 @@ nyc_airbnb =
 ```
 
 
-Let's make a scatterplot. But interactive this time
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
 
 ```{r}
 nyc_airbnb |> 
@@ -51,7 +50,10 @@ nyc_airbnb |>
   )
 ```
 
-Let's make a boxplot.
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
 
 ```{r}
 nyc_airbnb |> 
@@ -64,7 +66,7 @@ nyc_airbnb |>
   )
 ```
 
-Maybe barcharts next?
+### Chart C
 
 ```{r}
 nyc_airbnb |> 
@@ -77,18 +79,8 @@ nyc_airbnb |>
           )
 ```
 
-## ggplotly
-Very clunky. Wouldn't recommend
-Don't use this often
-
 ```{r}
-gg_scatterplot = 
-nyc_airbnb |> 
-  ggplot(aes( x = lat, y = long, color = price)) +
-  geom_point()
-
-ggplotly(gg_scatterplot)
+# add this in console to make it look like a dashboard
+#rmarkdown::render("dashboard_template.Rmd", output_format = "flexdashboard::flex_dashboard")
 ```
-
-
 
