@@ -1,11 +1,92 @@
 ---
-title: "About this Website"
+title: "Academic and Professional Experience"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-This website was coded by Kallan Roan using Rmarkdown to do all of the hard work.
+# Resume
+
+**EDUCATION**
+
+**Columbia University Mailman School of Public Health** New York, NY
+
+Master of Public Health in Epidemiology (Expected May 2026)
+
+Certificate in Applied Biostatistics and Public Health Data Science
+
+**University of Michigan** Ann Arbor, MI
+
+Bachelor of Science in Microbiology (April 2021)
+
+Minor in Applied Statistics   
+
+Honors/Awards: James B. Angell Scholar, University Honors 
+
+**EXPERIENCE**
+
+**New York City Department of Health and Mental Hygiene** New York, NY
+
+Foodborne Disease Intern (June 2025 – Present)
+
+*   Conducted routine surveillance of Salmonella and other reportable foodborne diseases by interviewing patients about their illness and exposures. 
+
+*   Collected case data from health care providers, infection prevention and control staff, and laboratories to assist with surveillance and case investigations.
+
+*   Performed data entry and management to ensure reliable case records for monitoring and analysis.  
+
+*   Assisted with outbreak and cluster investigations by conducting supplemental interviews, comparing exposures to identify commonalities, and preparing summary reports. 
+
+
+**Mycology/Mycobacteriology Laboratory – Mayo Clinic** Rochester, MN
+
+Clinical Laboratory Technologist (September 2021 – July 2024)
+
+*   Performed patient testing for detection, identification, and antimicrobial susceptibility testing of fungal and mycobacterial organisms to aid physicians in proper diagnosis, prognosis, and treatment of patients.
+
+*   Communicated with 30 lab technicians, lab assistants, physicians, and Mayo Laboratory Inquiry representatives weekly to increase understanding of tests and results.
+
+*   Contributed to two test validation projects to ensure fungal and mycobacterial identification using modified test procedures produced accurate results. 
+
+*   Assisted education specialists in teaching 24 students in the Mycology Lab Course for the Mayo Clinic Medical Laboratory Science Program to increase preparedness for the ASCP certification examination.
+
+**Oveta Fuller – Michigan Medicine** Ann Arbor, MI           
+
+Research Assistant (September 2020 – September 2021)
+
+*   Contributed to two community-based projects targeting health education by conducting literature reviews on HIV/AIDS and COVID-19.
+
+*   Supported the planning of COVID-19 webinars by organizing and summarizing current COVID-19 information and statistics. 
+
+*   Analyzed data from the Trusted Messenger Intervention to understand the effects of the intervention approach on HIV/AIDS perception in Zambia.
+
+**Richard Miller Lab – University of Michigan** Ann Arbor, MI
+
+Laboratory Assistant (May 2019 – May 2020)
+
+*   Performed mouse husbandry duties such as changing cages, adding enrichment, and giving correct diets to support the health and well-being of the mice along with experimental reproducibility. 
+
+*   Maintained the cleanliness and organization of animal rooms and equipment to create a safe environment for the workers and the mice.
+
+*   Supported other laboratory animal technicians by assisting them in duties such as health monitoring and treatments of mice.
+
+**He Group – Michigan Medicine** Ann Arbor, MI
+
+Undergraduate Research Opportunity Program Student (October 2018 – August 2019)
+
+*   Engaged in ontology-based research studying Guillain-Barré syndrome adverse event in vaccines under Dr. Yongqun He as a student in the Undergraduate Research Opportunity Program and a research assistant.
+
+*   Collected and organized data from the Vaccine Adverse Event Reporting System using Microsoft Excel.
+
+*   Contributed to the ongoing development of Vaccine Ontology by adding vaccines and related information using Protégé. 
+
+*   Analyzed large datasets from Vaccine Ontology and Ontology of Adverse Events to examine the relationship between Guillain-Barré syndrome and specific groups of vaccines.
+
+**SKILLS**
+
+Microsoft (Access, Excel, PowerPoint, Word), Laboratory Information Systems (SoftMic, SoftLab, SoftTotalQC), RStudio, SAS, SQL, QGIS. Fluent in Mandarin Chinese.
+
+
 
 Go back to [homepage](index.html).
