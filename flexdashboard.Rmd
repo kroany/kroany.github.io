@@ -15,14 +15,6 @@ library(p8105.datasets)
 
 ```{r}
 data("instacart")
-
-num_aisle_insta = 
-  instacart |> 
-  group_by(aisle) |> 
-  summarize(
-    n = n() # counts observations for each group
-  ) |> 
-  arrange(desc(n))
 ```
 
 
@@ -32,13 +24,22 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-num_aisle_insta |> 
-  filter(n > 10000) |> #keep those with more than 10000 orders
-  mutate(aisle = fct_reorder(aisle, n)) |> 
-  plot_ly(
-    x = ~aisle, y = ~n,
+instacart |> 
+  group_by(department) |> 
+  summarize(
+    n = n() 
+  ) |> 
+  arrange(desc(n)) |> 
+    mutate(department = fct_reorder(department, n)) |> 
+    plot_ly(
+    x = ~department, y = ~n, color = ~department,
     type = "bar", colors = "viridis"
-  ) 
+  ) |> 
+  layout(
+    title = "Count of Orders by Department",
+    xaxis = list(title = "Department"),
+    yaxis = list(title = "Count of Orders")
+  )
 ```
 
 Column {data-width=350}
@@ -53,21 +54,43 @@ instacart |>
   plot_ly(
       x = ~order_hour_of_day,
       type = "histogram", colors = "viridis"
-    )
+    ) |> 
+  layout(
+    title = "Histogram of Number of Orders by Hour of Day",
+    xaxis = list(title = "Order Hour of Day"),
+    yaxis = list(title = "Count of Orders")
+  )
 ```
 
 ### Chart C
 
 ```{r}
-
-
-
-
+instacart |> 
+  filter(department == "produce") |> 
+  mutate(
+    organic = ifelse(str_detect(product_name, "[Oo]rganic"), 1, 0),
+    organic = factor(
+        case_match(
+          organic,
+          0 ~ "Non-Organic",
+          1 ~ "Organic"
+        ),
+        levels = c("Non-Organic", "Organic")
+      )
+  ) |> 
+  group_by(organic, order_dow) |> 
+  summarize(
+    n = n()
+  ) |> 
+  plot_ly(
+    x = ~order_dow, y = ~n, color = ~organic,
+    type = "scatter", mode = "lines+markers"
+  ) |> 
+  layout(
+    title = "Count of Organic vs Non-Organic Produce \nOrdered by Day of Week",
+    xaxis = list(title = "Day of Week"),
+    yaxis = list(title = "Count of Orders")
+  )
 ```
-
-- percent reordered
-
-average number of orders per week day
-
 
 
