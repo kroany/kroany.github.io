@@ -87,6 +87,4 @@ Undergraduate Research Opportunity Program Student (October 2018 – August 2019
 
 Microsoft (Access, Excel, PowerPoint, Word), Laboratory Information Systems (SoftMic, SoftLab, SoftTotalQC), RStudio, SAS, SQL, QGIS. Fluent in Mandarin Chinese.
 
-
-
 Go back to [homepage](index.html).

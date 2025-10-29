@@ -13,6 +13,8 @@ navbar:
       href: mailto:<kr3145@cumc.columbia.edu>
     - icon: fa-github fa-lg
       href: http://github.com/kroany/
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/kallan-roan-0644aa179/
 output:
   html_document:
     theme: flatly
