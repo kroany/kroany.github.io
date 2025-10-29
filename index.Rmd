@@ -6,7 +6,7 @@ output:
     toc_float: true
 ---
 
-# Introduction
+### Introduction
 
 Kallan is a Master of Public Health Candidate in Epidemiology with a certificate in Applied Biostatistics and Public Health Data Science at Columbia University Mailman School of Public Health. Her interests include infectious disease, chronic disease, epidemiological methods, and data analysis. 
 
